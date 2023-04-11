@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+.background {
+    background-image: url(img/ffffc2.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 14px 14%;
+}
+
+.logo h1 a {
+    font-weight: 500;
+    font-size: 60px;
+    font-family: 'Tangerine', cursive;
+    cursor: pointer;
+    color: #000;
+}
+
+/* .cabeçalho-link ul {
+    display: flex;
+    gap: 3rem;
+} */
+
+#desktop-menu ul{
+    display: flex;
+    gap: 3rem;
+}
+
+#mobile-menu ul{
+    display: none;
+}
+
+.cabeçalho-link a {
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabeçalho-link a:hover {
+    color: #c8815f;
+}
+
+header .icon i{
+    display: none;
+}
+
+.Meio {
+    padding: 7rem 0 0 8.5rem;
+    line-height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 50%;
+}
+
+.Meio h1 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.Meio p {
+    word-break: keep-all;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.Meio a {
+    width: 205px;
+}
+
+.Meio button {
+    background-color: #c8815f;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 70%;
+}
+
+.Meio button:hover {
+    background-color: #111;
+    transform: scaleY(1.2);
+}
+
+section {
+    padding-top: 7rem;
+}
+
+section h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.Container-card-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.cards a img {
+    width: 20vw;
+    height: 45vh;
+    transition: 0.35s ease;
+    object-fit: cover;
+    border-radius: 13px;
+    min-width: 230px;
+    min-height: 301px;
+    
+}
+
+.cards a p {
+    z-index: 3;
+    position: absolute;
+    width: 20vw;
+    height: 45vh;
+    text-align: center;
+    color: #ff5100;
+    pointer-events: none;
+    font-family: 'Tangerine', cursive;
+    font-size: 6vw;
+    min-width: 230px;
+    min-height: 301px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards a img:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+.cta {
+    height: 60vh;
+    width: 100%;
+    background: url(../img/ffffc.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.text-cta {
+    padding-left: 5rem;
+}
+
+.text-cta h6 {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin-bottom: 15px;
+}
+
+.text-cta h4 {
+    font-size: 3.3rem;
+    line-height: 1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 15px;
+}
+
+.text-cta a {
+    background-color: #c8815f;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text-cta a:hover {
+    background-color: #111;
+    transform: scaleY(1.2);
+}
+
+
+.Container-roupas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+
+}
+
+.Container-roupas img:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.roupa img {
+    width: 250px;
+    height: auto;
+}
+
+.roupa {
+    background-color: #c8815f;
+    color: #000;
+}
+
+.Marcas {
+    margin-top: 10rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.Marcas img {
+    width: 180px;
+    height: auto;
+    background-color: aliceblue;
+}
+
+#Contato {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.meio-contato li {
+    margin-bottom: 15px;
+}
+
+.meio-contato li a {
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.last-text {
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}
+
+/* carrossel comeca aqui*/
+
+.geral{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 150px;
+    background-color: #c8805fc0;
+}
+
+
+.carousel-container {
+    width: calc(100%/2);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.carousel-container h2 {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.carousel img {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+    scroll-snap-align: center;
+}
+
+#left,#right{
+    display: flex;
+    align-self: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#left{
+    position: absolute;
+    left: 24%;
+}
+
+#right{
+    position: absolute;
+    right: 24%;
+}
+
+/* responsividade */
+@media screen and (max-width:950px){
+    .background {
+        background-image: url(img/back2.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        min-width: 100px;
+        
+    }
+    .logo h1 a {
+        font-weight: 500;
+        font-size: 40px;
+        font-family: 'Tangerine', cursive;
+        cursor: pointer;
+        color: #000;
+    }
+    .Meio {
+        padding: 3rem 0 0 6.5rem;
+        line-height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 55%;
+    }
+
+    .Meio h1{
+        font-size: 3vw;
+        font-weight: 400;
+    }
+
+    .Meio p{
+        font-size: 20px;
+        line-height: 30px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:800px ) {
+    .background {
+        background-image: url(img/back2.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        min-width: 100px;
+        
+    }
+    .logo h1 a {
+        font-weight: 500;
+        font-size: 55px;
+        font-family: 'Tangerine', cursive;
+        cursor: pointer;
+        color: #000;
+    }
+
+    .Meio {
+        padding: 3rem 0 0 4.5rem;
+        line-height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 55%;
+    }
+
+    .Meio h1{
+        font-size: 20px;
+        line-height: 30px;
+        width: 60%;
+    }
+
+    #desktop-menu ul{
+        display: none;
+    }
+
+    header .icon i{
+        display: block;
+    }
+}
+
+@media screen and (max-width:660px){
+    .Meio h1{
+        margin-top: 100px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .Meio p{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    button{
+        display: none;
+    }
+}
+@media screen and (max-width:450px){
+
+    .logo h1 a{
+        font-size:12px ;
+    }
+
+    .background {
+        background-image: url(img/mobile.png);
+        height: 110vh;
+    }
+
+    .Meio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .Meio p {
+        margin-bottom: 150px;
+        width: 90%;
+    }
+
+    .Meio h1{
+        margin-top: 100px;
+
+    }
+}
+
+/* 
+padding: 7rem 0 0 8.5rem;
+    line-height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 50%; */
+
+/* @media screen and (max-width:535px){
+    .Meio h1{
+        margin-top: 100px;
+        line-height: 35px;
+        font-size: 25px;
+    }
+    .Meio{
+        display: none;
+    }
+    .Meio2{
+        display: block;
+    }
+} */
